@@ -14,14 +14,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#ECEFFE, #C5CFFC);
+  background: linear-gradient(#e0f7fa, #d1c4e9); /* Màu nền mới */
 }
 
 .card-wrapper {
   max-width: 1100px;
   margin: 0 60px 35px;
   padding: 20px 10px;
-  overflow: visible; /* Cho phép nội dung dưới ảnh không bị cắt */
+  overflow: visible;
 }
 
 .card-list .card-item {
@@ -30,7 +30,7 @@ body {
 
 .card-list .card-item .card-link {
   display: flex;
-  flex-direction: column; /* Đặt ảnh + nội dung thành cột */
+  flex-direction: column;
   align-items: center;
   background: #fff;
   padding: 18px;
@@ -43,7 +43,7 @@ body {
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #5372F0;
+  border-color: #6a1b9a; /* tím đậm hơn */
 }
 
 .card-list .card-item .card-link:active {
@@ -52,7 +52,7 @@ body {
 
 .card-list .card-link .card-image {
   width: 100%;
-  max-height: 200px; /* Giới hạn chiều cao ảnh */
+  max-height: 200px;
   border-radius: 10px;
   object-fit: cover;
   aspect-ratio: 16 / 9;
@@ -64,32 +64,32 @@ body {
   font-size: 0.95rem;
   border-radius: 50px;
   font-weight: 500;
-  margin: 16px 0 8px; /* tạo khoảng trống dưới ảnh */
+  margin: 16px 0 8px;
 }
 
 .badge-designer {
-  color: #B22485;
-  background: #F7DFF5;
+  color: #7e57c2;
+  background: #ede7f6;
 }
 
 .badge-developer {
-  color: #5372F0;
-  background: #DDE4FF;
+  color: #0288d1;
+  background: #e1f5fe;
 }
 
 .badge-marketer {
-  color: #B25A2B;
-  background: #FFE3D2;
+  color: #6d4c41;
+  background: #efebe9;
 }
 
 .badge-gamer {
-  color: #205C20;
-  background: #D6F8D6;
+  color: #2e7d32;
+  background: #e8f5e9;
 }
 
 .badge-editor {
-  color: #856404;
-  background: #fff3cd;
+  color: #ff8f00;
+  background: #fff8e1;
 }
 
 .card-list .card-link .card-title {
@@ -102,26 +102,26 @@ body {
 .card-list .card-link .card-button {
   height: 35px;
   width: 35px;
-  color: #5372F0;
+  color: #6a1b9a;
   margin: 12px 0 5px;
   background: none;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid #5372F0;
+  border: 2px solid #6a1b9a;
   transform: rotate(-45deg);
   transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
   color: #fff;
-  background: #5372F0;
+  background: #6a1b9a;
 }
 
 .card-wrapper .swiper-pagination-bullet {
   height: 13px;
   width: 13px;
   opacity: 0.5;
-  background: #5372F0;
+  background: #6a1b9a;
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
@@ -129,7 +129,7 @@ body {
 }
 
 .card-wrapper .swiper-slide-button {
-  color: #5372F0;
+  color: #6a1b9a;
   margin-top: -35px;
 }
 
@@ -142,9 +142,9 @@ body {
   }
 }
 
-/* Phần profile card riêng */
+/* === Profile Card === */
 .main {
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  background: linear-gradient(135deg, #e0f7fa 0%, #ede7f6 100%);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -156,8 +156,8 @@ body {
 }
 
 .profile-card {
-  background-color: #fff8f0;
-  border: 1px solid #f0e6dd;
+  background-color: #f0f4ff;
+  border: 1px solid #cfd8dc;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border-radius: 25px;
   padding: 30px;
@@ -206,10 +206,12 @@ body {
 .data h2 {
   font-size: 33px;
   font-weight: 600;
+  color: #4a148c;
 }
 
 .data span {
   font-size: 18px;
+  color: #555;
 }
 
 .buttons {
@@ -226,10 +228,10 @@ body {
   border-radius: 25px;
   font-size: 18px;
   white-space: nowrap;
-  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+  background: linear-gradient(to right, #42a5f5, #7e57c2); /* gradient xanh tím */
   transition: 0.3s;
 }
 
 .buttons .btn:hover {
-  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.3);
 }
